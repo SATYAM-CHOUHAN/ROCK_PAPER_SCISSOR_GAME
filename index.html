@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Intro Page -->
+        <div id="intro-page" class="page">
+            <div class="intro-page-inner">
+                <h1>Welcome to Rock Paper Scissors!</h1>
+                <p>Please enter your in game name to continue:</p>
+                <form id="name-form">
+                    <input type="text" id="name" placeholder="Enter your name" required spellcheck="false" autocomplete="off">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Game Page -->
+        <div id="game-page" class="page">
+            <div class="rounds">
+                <div class="rounds-container">
+                    <p>Please enter total no of rounds you wanna play: </p>
+                    <input type="number" id="count-number" placeholder=" Enter total no of rounds " required>
+                    <button id="start" type="submit">Start</button>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Rock Paper Scissors <br> Game</h1>
+                <div class="buttons">
+                    <div class="b1">
+                        <button id="1" class="rock">
+                            <img src="rock.png" alt="Rock">
+                        </button>
+                        <span>rock</span>
+                    </div>
+                    <div class="b2">
+                        <button id="2" class="paper">
+                            <img src="paper.png" alt="Paper">
+                        </button>
+                        <span>paper</span>
+                    </div>
+                    <div class="b3">
+                        <button id="3" class="scissor">
+                            <img src="scissor.png" alt="Scissor">
+                        </button>
+                        <span>scissor</span>
+                    </div>
+                </div>
+
+                <div id="result">
+                    <div class="left">
+                        <p id="player-choice">Your choice: </p>
+                        <p id="computer-choice">Computer's choice: </p>
+                        <p id="winner">Result: </p>
+                    </div>
+
+                    <div class="right">
+                        <p id="result-counter1"><span id="result-counter11">player</span> wins: <span id="rc1">0</span></p>
+                        <p id="result-counter2">computer wins: <span id="rc2">0</span></p>
+                        <p id="result-counter3">tie: <span id="rc3">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- result and the last page -->
+
+        <div class="result-page">
+            <div class="box">
+                <h1>Result Panel</h1>
+                <p>Congratulations! <span id="user">you</span> win with <span id="highest-score">0</span> points</p>
+            </div>
+        </div>
+
+        <!-- <h1 id="mera-naam">made with <img src="pngtree-red-heart-icon-isolated-png-image_1726594.jpg" alt="love" height="10px" width="10px"> by SATYAM</h1> -->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
